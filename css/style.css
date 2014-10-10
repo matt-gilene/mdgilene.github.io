@@ -1,12 +1,11 @@
-<<<<<<< HEAD
+* {
+    box-sizing: border-box;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-* {
-    box-sizing: border-box;
-}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,8 +58,8 @@ table {
 
 .navbar {
     background: #f8f8f8;
-    border-color: #e7e7e7
-    height: 50px;
+    border-color: #e7e7e7;
+    height: 10%;
     line-height: 50px;
 }
 
@@ -69,31 +68,42 @@ table {
 }
 
 .navbar li a {
-    -webkit-transition-property: font weight s;
-    
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: transform .25s;
+    transform: translateZ(0);
     color: #555;
-    font-size: 30px;
-    padding: 10;
-    text-decoration: none;
-    
+    font-size: 35px;
+    text-decoration: none; 
+    margin: 10px;
 }
 
-.navbar li a:hover {
-    color: #333;
-    font-weight: 900;
-    background-color: transparent;
+.navbar li a:hover,
+.navbar li a:active,
+.navbar li a:focus {
+    transform: scale(1.1);
 }
 
-
-
-=======
-h1 {
-    font-size: 100px;
-    transition: transform 1s;
-    transform: rotate(0deg);
+.body {
+    height: 90%;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
 }
 
-h1:hover {
-    transform: rotate(720deg);
+img {
+    width: 50%;
+    margin-left: 100;
 }
->>>>>>> origin/master
+
+.title{
+    font-size: 100;
+    color: #555;
+    padding-top: 50;
+    padding-left: 100;
+}
+
+>>>>>>> Added CSS Reset
